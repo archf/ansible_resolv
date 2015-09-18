@@ -1,19 +1,28 @@
 resolv
 ========
 
-This roles enables users to configure the /etc/resolv.conf
+This roles enables users to configure the /etc/resolv.conf.
 
 Requirements
 ------------
 
-None
+None.
 
 Role Variables
 --------------
 
-Please read the descriptions in
+```yaml
+resolv_domain: ''
 
-- defaults/main.yml
+resolv_search: []
+
+# loopback as a default
+resolv_nameserver:
+  - 127.0.0.1
+
+  resolv_sortlist: []
+  resolv_options: []
+```
 
 Dependencies
 ------------

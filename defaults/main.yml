@@ -5,6 +5,7 @@ resolv_domain: ''
 
 resolv_search: []
 
+# loopback as a default
 resolv_nameserver:
   - 127.0.0.1
 
