@@ -7,7 +7,7 @@ domain {{ resolv_domain }}
 {% if resolv_search|length %}
 search {{ resolv_search|join(' ') }}
 {% endif %}
-{% for item in resolv_nameserver %}
+{% for item in resolv_ns %}
 nameserver {{item}}
 {% endfor %}
 

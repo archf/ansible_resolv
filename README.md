@@ -17,7 +17,7 @@ resolv_domain: ''
 resolv_search: []
 
 # loopback as a default
-resolv_nameserver:
+resolv_ns:
   - 127.0.0.1
 
   resolv_sortlist: []
